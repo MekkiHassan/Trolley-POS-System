@@ -1,2 +1,2 @@
 # Trolley-POS-System
-this project is a Automation testing for POS system for trolly prand on KW
+This project is an Automation testing for the POS system for Trolley Brand on KW
