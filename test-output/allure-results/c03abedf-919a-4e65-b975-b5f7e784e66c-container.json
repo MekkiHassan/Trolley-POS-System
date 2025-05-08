@@ -1,0 +1,1 @@
+{"uuid":"c03abedf-919a-4e65-b975-b5f7e784e66c","name":"testCases.StashedTest","children":["6c3ae837-8882-4a61-bd20-72442015d710"],"befores":[{"name":"checkClassName","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1744706457430,"stop":1744706457432}],"afters":[],"start":1744706457133,"stop":1744706457581}
