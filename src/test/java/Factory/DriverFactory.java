@@ -28,7 +28,6 @@ public class DriverFactory {
         switch(browserName.toLowerCase())
         {
             case "chrome":
-
                 Map<String, Object> prefs = new HashMap<>();
                 prefs.put("credentials_enable_service", false);
                 prefs.put("profile.password_manager_enabled", false);

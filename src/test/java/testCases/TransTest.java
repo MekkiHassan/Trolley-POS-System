@@ -24,7 +24,7 @@ public class TransTest extends BaseTest {
         new TransactionPage(driver).openTransPage();
     }
 
-    /*@Test (priority = 2)
+    @Test (priority = 2)
     @Description("refund specific transactions")
     public void refundProcess(){
         new TransactionPage(driver)
@@ -32,7 +32,6 @@ public class TransTest extends BaseTest {
                 .printReceipt()
                 .refundOrder();
     }
-*/
     @Test (priority = 3)
     @Description("Log out Cashier using End of shift ")
     public void logoutUsingEndOfShift()  {
