@@ -7,7 +7,6 @@
             <class name="testCases.StashedTest"/>
             <class name="testCases.TransTest"/>
             <class name="testCases.OfflineModeTest"/>
-
         </classes>
     </test>
 </suite>
