@@ -3,10 +3,10 @@
     <test name="Regression Tests">
         <classes>
             <class name="testCases.LoginTest"/>
-     <!--       <class name="testCases.CartTest"/>
+            <class name="testCases.CartTest"/>
             <class name="testCases.StashedTest"/>
             <class name="testCases.TransTest"/>
-            <class name="testCases.OfflineModeTest"/>-->
+            <class name="testCases.OfflineModeTest"/>
         </classes>
     </test>
 </suite>
