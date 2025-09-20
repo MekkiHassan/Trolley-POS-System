@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.testng.ITestListener;
 import org.testng.annotations.Test;
 import utils.ElementActions;
+import utils.PropertiesUtils;
 import utils.Validation;
 
 
@@ -20,8 +21,8 @@ public class LoginTest extends BaseTest {
     @Description("Login using Invalid password")
     public void unSuccessfulLoginInvalidPass() throws InterruptedException {
             new LoginPage(driver)
-                    .enterUsername("mekki")
-                    .enterPassword("123")
+                    .enterUsername(PropertiesUtils.getJsonValue("login-invalid-credentials.username"))
+                    .enterPassword(PropertiesUtils.getJsonValue("login-invalid-credentials.password"))
                     .clickLoginBtn();
            String actualResult=
              ElementActions.finderElement(driver, By.xpath("//*[@data-testid='toast-body'][contains(.,'Invalid Credentials')]")).getText();

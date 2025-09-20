@@ -6,6 +6,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import utils.Listener;
+import utils.PropertiesUtils;
 
 public class BaseTest {
     protected static WebDriver driver;
@@ -13,9 +14,9 @@ public class BaseTest {
     private String testClassName;
     @BeforeSuite
     public void setupDriver() {
-      driver = DriverFactory.createInstance("chrome");
-        new LoginPage(driver).waitSync();
-
+        PropertiesUtils.loadJson("D:\\TrolleyPOS_AutomationTest\\src\\test\\resources\\TestData.json");
+          driver = DriverFactory.createInstance(PropertiesUtils.getJsonValue("browser_Type"));
+            new LoginPage(driver).waitSync();
     }
 
     @BeforeMethod
@@ -39,13 +40,13 @@ public class BaseTest {
         }
     }
 
-    @AfterSuite
+    /*@AfterSuite
     @Step("close the session after test class")
     public void tearDown() throws InterruptedException {
 
         Thread.sleep(2000);
         driver.close();
-    }
+    }*/
 
 
 }

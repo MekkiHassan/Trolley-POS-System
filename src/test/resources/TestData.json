@@ -1,0 +1,23 @@
+{
+  "browser_Type": "chrome",
+  "path":"https://pos-staging.trolley.systems/v-25.7.8/cart?tid=066f8593-dfd3-4b9d-9df6-6892a572b2f8&n=mubarak-alkabeer-oula-82-pos-1",
+
+  "login-credentials": {
+    "username": "mekki",
+    "password": "123456"
+  },
+  "login-invalid-credentials": {
+    "username": "mekki2",
+    "password": "12345633"
+  },
+  "login-empty-credentials": {
+    "username": "",
+    "password": ""
+  },
+  "item1":{
+    "name": "bla bla",
+    "barcode": ""
+  }
+
+
+}

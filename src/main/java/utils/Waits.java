@@ -20,7 +20,7 @@ public class Waits {
     public static WebElement waitForElementVisible(WebDriver driver, By locator) {
         return new WebDriverWait(driver, Duration.ofSeconds(50)).
                 until(driver1 -> {
-                            WebElement element = waitForElementPresent(driver, locator);
+                            WebElement element = waitForElementPresent(driver1, locator);
                             return element.isDisplayed() ? element : null;
                         }
                 );
@@ -29,7 +29,7 @@ public class Waits {
     public static WebElement waitForElementClickable(WebDriver driver, By locator) {
         return new WebDriverWait(driver, Duration.ofSeconds(50)).
                 until(driver1 -> {
-                            WebElement element = waitForElementVisible(driver, locator);
+                            WebElement element = waitForElementVisible(driver1, locator);
                             return element.isEnabled() ? element : null;
                         }
                 );

@@ -12,6 +12,7 @@ import org.openqa.selenium.devtools.v133.network.model.ConnectionType;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import utils.PropertiesUtils;
 import utils.Waits;
 
 import java.time.Duration;
@@ -21,7 +22,7 @@ import java.util.Optional;
 
 public class DriverFactory {
     private static WebDriver driver;
-    static String path= "https://pos-staging.trolley.systems/v-25.4.11/cart?tid=066f8593-dfd3-4b9d-9df6-6892a572b2f8&n=mubarak-alkabeer-oula-82-pos-1";
+    static String path= PropertiesUtils.getJsonValue("path");
 
     public static WebDriver createInstance(String browserName){
 
